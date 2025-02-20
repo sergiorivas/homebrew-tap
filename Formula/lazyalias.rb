@@ -7,6 +7,11 @@ class Lazyalias < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", bin/"lazyalias", "cmd/lazyalias"
+    ENV["GOPATH"] = buildpath
+    path = buildpath/"src/github.com/sergiorivas/lazyalias"
+    path.install Dir["*"]
+    cd path do
+      system "go", "build", "-o", bin/"lazyalias", "./cmd/lazyalias"
+    end
   end
 end
