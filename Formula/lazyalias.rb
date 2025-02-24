@@ -1,8 +1,8 @@
 class Lazyalias < Formula
   desc "LazyAlias is a command-line tool that helps you manage and execute frequently used commands across different projects. It provides an interactive menu to select commands defined in a YAML configuration file and copies them to your clipboard for easy execution."
   homepage "https://github.com/sergiorivas/lazyalias"
-  url "https://github.com/sergiorivas/lazyalias/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "661748f96b4f612b923ff17ade92e3ab1de3634f125b15ad8a9a32e07fd0e57c"
+  url "https://github.com/sergiorivas/lazyalias/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "d3e6b3dd23e5dba34f684ffe234f27c9318233124fc791782b395978071179e8"
 
   depends_on "go" => :build
 
