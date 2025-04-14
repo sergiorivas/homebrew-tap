@@ -1,8 +1,8 @@
 class Notify < Formula
   desc "Notify is a versatile command-line tool designed to streamline the process of sending notifications. It supports multiple notification methods, including audio alerts and dialog boxes, making it suitable for a wide range of use cases. Whether you need to deliver success messages, error alerts, or informational updates, Notify provides a customizable and efficient solution."
   homepage "https://github.com/sergiorivas/notify"
-  url "https://github.com/sergiorivas/notify/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d4adc4b35f75214fd30268114cb760fbd9e314f997b6ab00e49fffa99789eea7"
+  url "https://github.com/sergiorivas/notify/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "0791b8fc118e66142c13fe31cce82f8f0df4f7e6e251c3054d2244fb39280f4f"
 
   depends_on "go" => :build
 
