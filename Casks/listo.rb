@@ -1,6 +1,6 @@
 cask "listo" do
-  version "0.1.3"
-  sha256 "756e85ef0cf99bce5e1424e6c12c1f57c816d5faed82476337a004f1972a6cdc"
+  version "0.1.4"
+  sha256 "664155db16b0b37892a8fbef8b55aa62b0f2a528845737c87fd78057e109c7a1"
 
   url "https://github.com/sergiorivas/listo/releases/download/v#{version}/Listo-#{version}.zip"
   name "Listo"
@@ -9,12 +9,14 @@ cask "listo" do
 
   app "Listo.app"
 
-  postflight do
+  postflight_steps do
     # This build is ad-hoc signed, not notarized by Apple (that needs a
     # paid Developer ID account) — macOS would otherwise refuse to open
     # it because of the Gatekeeper quarantine flag the download picked
-    # up.
-    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/Listo.app"]
+    # up. `postflight_steps`/`run`, not the free-form `postflight`
+    # block: the latter is deprecated by Homebrew in favor of this
+    # declarative form.
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Listo.app"]
   end
 
   caveats do
