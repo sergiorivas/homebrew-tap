@@ -1,9 +1,9 @@
 class Listo < Formula
   desc "To-do list that lives as plain Markdown on disk"
   homepage "https://github.com/sergiorivas/listo"
-  url "https://github.com/sergiorivas/listo/releases/download/v0.1.1/Listo-0.1.1.zip"
-  sha256 "a9546973d8b22d87f0bd29eca1616c3d7bb2623cc8985217a90970d5bb0ac718"
-  version "0.1.1"
+  url "https://github.com/sergiorivas/listo/releases/download/v0.1.2/Listo-0.1.2.zip"
+  sha256 "3a1f5275483152bd7ce81f4adcebb443ea26ae606f9d927029837e1fa0b19961"
+  version "0.1.2"
 
   def install
     # Homebrew already unpacked the zip into the working directory, so
