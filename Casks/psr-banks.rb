@@ -1,6 +1,6 @@
 cask "psr-banks" do
-  version "0.3.0"
-  sha256 "bd62728d0d996b1beaa4d0ede136249efe6c401f3510d066a6e265cf56f9009d"
+  version "0.3.1"
+  sha256 "b48ead14cc9215d8107492668d22aef2e4d0e096025c4274bd6b38266d9d9da9"
 
   url "https://github.com/sergiorivas/psr-banks/releases/download/v#{version}/PSRBanks-#{version}.zip"
   name "PSR Banks"
