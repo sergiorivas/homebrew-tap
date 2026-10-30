@@ -1,6 +1,6 @@
 cask "listo" do
-  version "0.1.40"
-  sha256 "dd83c9c9c772c566f5ad2c19ddbcd2f657861918e998b8593e0b64e72d78aaeb"
+  version "0.1.41"
+  sha256 "98dd0b92806ddd4b2b5df2a3c063aa5e37440eff6c0ef2311662082c80ec3b76"
 
   url "https://github.com/sergiorivas/listo/releases/download/v#{version}/Listo-#{version}.zip"
   name "Listo"
